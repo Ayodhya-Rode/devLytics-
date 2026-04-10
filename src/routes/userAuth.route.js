@@ -1,5 +1,5 @@
 import express from "express";
-import { registerUser } from "../controllers/authUser.controller.js";
+import { registerUser, loginUser } from "../controllers/authUser.controller.js";
 
 const router = express.Router();
 
@@ -16,5 +16,16 @@ const router = express.Router();
 
 router.post("/register", registerUser);
 
+
+/**
+ * @route POST /api/auth/login
+ * @description Login a user
+ * @access Public
+ * @param {string} email - The email of the user
+ * @param {string} password - The password of the user
+ * @returns {Object} 200 - Login successful
+ * @returns {Object} 400 - Login failed
+ */
+router.post("/login", loginUser);
 
 export default router;
