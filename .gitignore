@@ -1,0 +1,32 @@
+# node modules
+node_modules/
+
+# env variables (IMPORTANT)
+.env
+
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# build / dist
+dist/
+build/
+
+# coverage
+coverage/
+
+# IDE files
+.vscode/
+.idea/
+
+# optional
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
